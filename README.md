@@ -50,41 +50,34 @@ If circle detection fails, fallback logic is used to estimate pupil position.
 <img src="output/1.jpg" width = "300" height = "280"/> <img src="output/2.jpg" width = "300" height = "280"/>
 <img src="output/3.jpg" width = "300" height = "280"/> <img src="output/4.jpg" width = "300" height = "280"/>
 
-## Want to Contribute?
+## 🎯 Applications
 
-- Created something awesome, made this code better, added some functionality, or whatever (this is the hardest part).
-- [Fork it](http://help.github.com/forking/).
-- Create new branch to contribute your changes.
-- Commit all your changes to your branch.
-- Submit a [pull request](http://help.github.com/pull-requests/).
+Eye tracking systems
 
------
+Driver drowsiness detection
 
-## Need Help? 
+Online exam proctoring
 
-We also provide a free, basic support for all users who want to use this AI ML based pupil detection techniques for their projects. In case you want to customize this Pupil detection technique for your development needs, then feel free to contact our [AI ML developers](https://www.weblineindia.com/ai-ml-dl-development.html).
+Human–computer interaction
 
------
+ ## ⚠️ Limitations
 
-## Collection of Components
+Sensitive to lighting conditions
 
-We have built many other components and free resources for software development in various programming languages. Kindly click here to view our [Free Resources for Software Development](https://www.weblineindia.com/communities.html).
+Reduced accuracy with reflections or glasses
 
-------
+Slower performance for real-time video processing
 
-## Changelog
+🔮 Future Improvements
 
-Detailed changes for each release are documented in [CHANGELOG.md](./CHANGELOG.md).
+Replace Dlib with MediaPipe for faster landmark detection
 
-## Credits
+CNN-based pupil segmentation
 
-Refered dlib face detection lib [Dlib](http://dlib.net/python/index.html).
+Real-time webcam support
 
-## License
+Backend deployment using Flask or FastAPI
 
-[MIT](LICENSE)
-
-[mit]: https://github.com/miguelmota/is-valid-domain/blob/e48e90f3ecd55431bbdba950eea013c2072d2fac/LICENSE
 
 ## Keywords
 
