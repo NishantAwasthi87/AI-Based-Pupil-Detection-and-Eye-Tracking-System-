@@ -1,41 +1,49 @@
-# Pupil Detection using Dlib face landmark detector
+# AI-Based Pupil Detection and Eye Tracking System
 
-The code is used to get the co-ordinates of eyes and detect the pupil region accurately.
+This project implements a computer vision–based pupil detection system using facial landmark analysis.
+The system detects eye regions from human face images and accurately localizes pupil centers.
 
-It works with human face images. Dlib's facial landmark detector is used for extracting the coordinates from the eye region.
-The eye corner points are collected and it check for dark colored region between the detected eye corner points of each eye.
-It uses OpenCV's houghcircles for detecting circle in a gray scaled image. Thus the pupil is calculated as the midpoint of the circle.
+---
 
+## 📌 Overview
 
-## Table of contents
+The system uses Dlib’s 68-point facial landmark detector to extract eye coordinates.
+Dark pixel analysis and Hough Circle Transform are applied to identify pupil locations.
+If circle detection fails, fallback logic is used to estimate pupil position.
 
-- [Getting started](#getting-started)
-- [Installation](#installation)
-- [Features](#features)
-- [Usage](#usage)
-- [Results](#results)
-- [Want to Contribute?](#want-to-contribute)
-- [Need Help / Support?](#need-help)
-- [Collection of Other Components](#collection-of-components)
-- [Changelog](#changelog)
-- [Credits](#credits)
-- [License](#license)
-- [Keywords](#Keywords)
+---
 
+## 🛠 Tech Stack
+- Python
+- OpenCV
+- Dlib
+- NumPy
+- Image Processing
+- Computer Vision
 
-## Features
+---
 
-- Accurately detects the eye pupil on human face.
-- HoughCircles is used to detect circles.
+## 🚀 Features
+- Face detection using frontal face detector
+- 68-point facial landmark extraction
+- Eye region localization using landmark indices
+- Pupil detection using pixel-intensity analysis
+- Circle detection using Hough Circle Transform
+- Fallback logic for robust pupil localization
+- Batch image processing with annotated outputs
 
-## Usage
+---
 
-Inside the project directory run:
+## 🔄 Project Workflow
+1. Detect face from input image
+2. Extract 68 facial landmarks using Dlib
+3. Crop left and right eye regions
+4. Identify dark pixels corresponding to pupil
+5. Apply Hough Circle Transform for pupil detection
+6. Annotate and save output images
 
-```
-python pupil_detection.py -i path-to-directory-of-input-images -o path-to-output-directory
-```
-You can find sample images in image folder and result images in output folder.
+---
+
 
 ### Results
 
